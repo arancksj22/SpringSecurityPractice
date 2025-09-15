@@ -15,7 +15,7 @@ public class Controller {
     }
 
     @GetMapping
-    public String secretInfoDisplay(){
-
+    public String secretInfo(){
+        return service.displaySecretInfo();
     }
 }
