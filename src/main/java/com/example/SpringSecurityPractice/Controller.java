@@ -8,6 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/prod/secretInfo")
 public class Controller {
 
+    MainService service;
+
+    Controller(MainService service){
+        this.service = service;
+    }
+
     @GetMapping
     public String secretInfoDisplay(){
 
